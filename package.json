@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-graphql-api",
+  "version": "1.0.0",
+  "description": "NodeJS/GraphQL API that returns a list of ICO contributions and a React app that consumes the API and visualizes the data in a meaningful way",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustojulio/project-nodejs-graphql-express-apollo-api.git"
+  },
+  "author": "Augusto de Paula Júlio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustojulio/project-nodejs-graphql-express-apollo-api/issues"
+  },
+  "homepage": "https://github.com/augustojulio/project-nodejs-graphql-express-apollo-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8"
+  }
+}
