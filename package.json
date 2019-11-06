@@ -4,7 +4,7 @@
   "description": "NodeJS/GraphQL API that returns a list of ICO contributions and a React app that consumes the API and visualizes the data in a meaningful way",
   "main": "app.js",
   "scripts": {
-    "test": "test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "apollo-server-express": "^2.9.7",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
-    "graphql": "^14.5.8"
+    "graphql": "^14.5.8",
+    "mocha": "^6.2.2"
   }
 }

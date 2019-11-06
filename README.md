@@ -31,13 +31,11 @@ NodeJS/GraphQL API that returns a list of ICO contributions and a React app that
 
 3. Build React app to fetch API data
 
-4. Add unit tests/end-to-end tests
-
 
 ## Next steps (backlog activities)
 
 Suggestions to improve the project/code
 
-1. 
+1. Add unit tests/end-to-end tests with Mocha
 
-2. 
+2. Deploy the app to Heroku
