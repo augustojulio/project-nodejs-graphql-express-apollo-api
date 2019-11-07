@@ -5,7 +5,7 @@ const typeDefs = gql`
         address: String
         currency: String
         value: Int
-        txid: Int
+        txid: String
     }
     type Query {
         allIcos: [Ico]
