@@ -1,23 +1,16 @@
 const express = require('express');
-const { ApolloServer, gql } = require('apollo-server-express'); 
-//gql is a JavaScript template literal tag that parses GraphQL query strings into the standard GraphQL AST.
+const { ApolloServer } = require('apollo-server-express'); 
 
-const typeDefs = gql`
-    type Query {
-        hello: String
-    }
-`;
+const typeDefs = require('./api/schema');
+const resolvers = require('./api/resolvers');
 
-const resolvers = {
-    Query: {
-        hello: () => 'Hello world!'
-    }
-};
+const app = express();
+
+const PORT = 4000;
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
-const app = express();
 server.applyMiddleware({ app });
 
-app.listen({ port: 4000 }, () =>
-    console.log(`Server ready at http://localhost:4000${server.graphqlPath}`))
+app.listen(PORT, () =>
+    console.log(`Server ready at http://localhost:4000`))

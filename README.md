@@ -39,3 +39,5 @@ Suggestions to improve the project/code
 1. Add unit tests/end-to-end tests with Mocha
 
 2. Deploy the app to Heroku
+
+3. Connect with MongoDB

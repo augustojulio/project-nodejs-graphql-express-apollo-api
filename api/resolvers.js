@@ -8,7 +8,7 @@ const defaultData = [
     {
     "address": "321nLVZFt3W6G74o3Yx8bTiEBsjER9eAIO",
     "currency": "ETH",
-    "value": 5041146859,
+    "value": 146859,
     "txid": "t9z48e20e78ed5800ca07ea2a782a14227fee043de86f88eaaebcd88d34c9403"
     }
 ]
@@ -21,7 +21,7 @@ const resolvers = {
     }
 }
 
-export default resolvers
+module.exports = resolvers;
 
 
 
