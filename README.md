@@ -10,14 +10,35 @@ git clone https://github.com/augustojulio/project-nodejs-graphql-express-apollo-
 
 ```
 
-2. Go to the directory root folder
+2. Go to the directory root folder 
+```bash
+cd project-nodejs-graphql-express-apollo-api
+```
 
-3. To run the app
+3. Install the dependencies
+```bash
+npm install
+```
+
+4. To run the server
 
 ```bash
 node app.js
 ```
 
+5. To test the API, go to: http://localhost:4000/graphql in your browser and run th following query
+```bash
+{
+    allIcos {
+        address
+        currency
+        value
+        txid
+    }
+}
+```
+
+6. Hit the play button to see the results
 
 ## Development Flow and Chosen Tools
 
