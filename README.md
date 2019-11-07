@@ -1,22 +1,22 @@
 # NodeJS GraphQL API with Express and Apollo
 NodeJS/GraphQL API that returns a list of ICO contributions and a React app that consumes the API and visualizes the data in a meaningful way
 
-## Installation
+## Installation & Usage
 
-1. 
+1. Clone it
 
 ```bash
+git clone https://github.com/augustojulio/project-nodejs-graphql-express-apollo-api
 
 ```
 
-2. 
+2. Go to the directory root folder
 
+3. To run the app
 
-## Usage
-
-1. 
-
-2. 
+```bash
+node app.js
+```
 
 
 ## Development Flow and Chosen Tools
