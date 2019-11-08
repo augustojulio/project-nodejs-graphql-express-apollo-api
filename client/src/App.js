@@ -35,14 +35,38 @@ const getAllIcos = gql`
 // </Query>
 // );
 // export default Data;
+    // <ApolloProvider client={client}>
+    //     <div>
+    //       <h2>My first Apollo app </h2>
+    //     </div>
+    //  </ApolloProvider>
+          // {({ loading, error, data }) => {
+      // if (loading) return <p>Loading…</p>;
+      // if (error) return <p>Error :(</p>;
+      // return data.allIcos.map(({ address, currency }) => (
+      //   <div key={address}>
+      //     <p>{`${address}: ${currency}`}</p>
+      //   </div>
+      //  ));
+      // }}
 
 const Data = () => (
     <ApolloProvider client={client}>
         <div>
-          <h2>My first Apollo app </h2>
+          <h2>Icos list </h2>
+          <Query query={getAllIcos} >
+            {({ loading, error, data }) => {
+              if (loading) return <p>Loading…</p>;
+              if (error) return <p>Error :(</p>;
+              return data.allIcos.map(({ address, currency }) => (
+                <div key={address}>
+                  <p>{`${address}: ${currency}`}</p>
+                </div>
+              ));
+            }}
+          </Query>
         </div>
-     </ApolloProvider>
-
+    </ApolloProvider>
 );
 
 export default Data;
