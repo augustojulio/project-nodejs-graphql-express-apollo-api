@@ -12,8 +12,6 @@ const client = new ApolloClient({
 });
 
 
-// import { Query } from "react-apollo";
-
 const getRates = gql`
 {
   products(type: "DVD") {
@@ -36,8 +34,9 @@ const getRates = gql`
 // );
 // export default Data;
 
-function App() {
-  return (
+// function App() {
+const Data = () => (
+  // return (
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -59,10 +58,10 @@ function App() {
           <h2>My first Apollo app </h2>
         </div>
      </ApolloProvider>
-  );
-}
 
-export default App;
+);
+
+export default Data;
 
 
 
