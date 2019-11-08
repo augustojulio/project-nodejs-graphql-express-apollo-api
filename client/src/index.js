@@ -4,10 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// import React, { Component } from "react";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-import Local from “./components/Local”;
+// import Local from “./components/Local”;
 
 const localGraphQL = "http://localhost:4000/graphql";
 
