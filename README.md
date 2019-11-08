@@ -15,7 +15,7 @@ git clone https://github.com/augustojulio/project-nodejs-graphql-express-apollo-
 cd project-nodejs-graphql-express-apollo-api
 ```
 
-3. Install the dependencies
+3. Install the Server dependencies
 ```bash
 npm install
 ```
