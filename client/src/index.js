@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
+// import ApolloClient from "apollo-boost";
+// import { ApolloProvider } from "react-apollo";
 // import Local from “./components/Local”;
 
-const localGraphQL = "http://localhost:4000/graphql";
+// const localGraphQL = "http://localhost:4000/graphql";
 
-const client = new ApolloClient({
-  uri: localGraphQL
-});
+// const client = new ApolloClient({
+//   uri: localGraphQL
+// });
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
