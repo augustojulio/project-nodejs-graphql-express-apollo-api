@@ -21,34 +21,7 @@ const getAllIcos = gql`
         txid
     }
 }`;
-// const Data = () => (
-//   <Query query={getRates} >
-//   {({ loading, error, data }) => {
-//   if (loading) return <p>Loading…</p>;
-//   if (error) return <p>Error :(</p>;
-//   return data.products.map(({ name, price }) => (
-//     <div key={name}>
-//       <p>{`${name}: ${price}`}</p>
-//     </div>
-//    ));
-//   }}
-// </Query>
-// );
-// export default Data;
-    // <ApolloProvider client={client}>
-    //     <div>
-    //       <h2>My first Apollo app </h2>
-    //     </div>
-    //  </ApolloProvider>
-          // {({ loading, error, data }) => {
-      // if (loading) return <p>Loading…</p>;
-      // if (error) return <p>Error :(</p>;
-      // return data.allIcos.map(({ address, currency }) => (
-      //   <div key={address}>
-      //     <p>{`${address}: ${currency}`}</p>
-      //   </div>
-      //  ));
-      // }}
+
 
 const Data = () => (
     <ApolloProvider client={client}>
@@ -58,9 +31,9 @@ const Data = () => (
             {({ loading, error, data }) => {
               if (loading) return <p>Loading…</p>;
               if (error) return <p>Error :(</p>;
-              return data.allIcos.map(({ address, currency }) => (
+              return data.allIcos.map(({ address, currency, value, txid }) => (
                 <div key={address}>
-                  <p>{`${address}: ${currency}`}</p>
+                  <p>{`Address: ${address}, currency: ${currency}, value:  ${value}, txid:  ${txid} `}</p>
                 </div>
               ));
             }}

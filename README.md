@@ -20,7 +20,7 @@ cd project-nodejs-graphql-express-apollo-api
 npm install
 ```
 
-4. To run the server
+4. Run the server
 
 ```bash
 node app.js
