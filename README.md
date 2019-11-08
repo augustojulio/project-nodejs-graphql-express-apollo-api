@@ -26,19 +26,20 @@ npm install
 node app.js
 ```
 
-5. To test the API, go to: http://localhost:4000/graphql in your browser and run th following query
+5. Open a new terminal and go to the client directory
 ```bash
-{
-    allIcos {
-        address
-        currency
-        value
-        txid
-    }
-}
+cd project-nodejs-graphql-express-apollo-api/client
 ```
 
-6. Hit the play button to see the results
+6. Install the Client dependencies
+```bash
+npm install
+```
+
+7. Run the client app
+```bash
+npm start
+```
 
 ## Development Flow and Chosen Tools
 
