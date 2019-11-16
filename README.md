@@ -23,7 +23,7 @@ npm install
 4. Run the server
 
 ```bash
-node app.js
+npm start
 ```
 
 5. Open a new terminal and go to the client directory
