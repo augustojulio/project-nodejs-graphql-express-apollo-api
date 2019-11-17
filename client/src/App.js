@@ -32,10 +32,10 @@ const Data = () => (
               if (loading) return <p>Loading…</p>;
               if (error) return <p>Error :(</p>;
               return data.allIcos.map(({ address, currency, value, txid }) => (
-                <div key={address}>
-                  <p>{`Address: ${address}, currency: ${currency}, value:  ${value}, txid:  ${txid} `}</p>
-                </div>
-              ));
+                <ul style={{border: "solid 1px green", margin:"6px"}}><li key={address}>
+                  {`Address: ${address}, currency: ${currency}, value:  ${value}, txid:  ${txid} `}
+                </li></ul>
+              )); 
             }}
           </Query>
         </div>
